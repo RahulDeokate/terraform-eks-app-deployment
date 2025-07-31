@@ -1,0 +1,31 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+terraform.tfvars
+terraform.tfstate.d/
+crash.log
+*.tfplan
+
+# CLI binaries
+terraform
+terraform.exe
+
+# Kubernetes
+.kube/
+kubeconfig
+*.yaml.bak
+
+# Docker
+*.tar
+*.pid
+
+# Local files
+.env
+logs/
+*.log
+
+# OS/IDE
+.DS_Store
+.idea/
+.vscode/
