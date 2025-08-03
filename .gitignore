@@ -4,7 +4,6 @@
 *.tfplan
 crash.log
 terraform.tfstate.d/
-terraform.tfvars
 
 # Terraform working directory (plugin & module cache)
 .terraform/
