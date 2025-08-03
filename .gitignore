@@ -1,17 +1,19 @@
-# Terraform
-.terraform/
+# Terraform state & crash files
 *.tfstate
 *.tfstate.backup
-terraform.tfvars
-terraform.tfstate.d/
-crash.log
 *.tfplan
+crash.log
+terraform.tfstate.d/
+terraform.tfvars
 
-# CLI binaries
+# Terraform working directory (plugin & module cache)
+.terraform/
+
+# Ignore CLI binaries only (not the terraform folder)
 terraform
 terraform.exe
 
-# Kubernetes
+# Kubernetes configs
 .kube/
 kubeconfig
 *.yaml.bak
@@ -20,12 +22,13 @@ kubeconfig
 *.tar
 *.pid
 
-# Local files
+# Environment & logs
 .env
-logs/
 *.log
+logs/
 
-# OS/IDE
+# Editor / OS files
 .DS_Store
 .idea/
 .vscode/
+Thumbs.db
