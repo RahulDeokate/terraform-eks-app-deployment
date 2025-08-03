@@ -15,8 +15,9 @@ resource "aws_eks_node_group" "workers" {
   }
 
   instance_types  = var.instance_types
-  ami_type        = "AL2_x86_64"
-  disk_size       = 10
+  ami_type = "AL2023_x86_64_STANDARD"
+
+  disk_size       = 20
   capacity_type   = "ON_DEMAND"
 
   # Optional: Use only if aws_eks_cluster is defined in this module
