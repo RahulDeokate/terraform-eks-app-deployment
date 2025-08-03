@@ -12,3 +12,4 @@ output "subnet2_id" {
   description = "Value of Subnet 2 ID"
   value       = aws_subnet.subnet_2.id
 }
+
