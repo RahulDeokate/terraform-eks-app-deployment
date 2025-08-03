@@ -10,7 +10,7 @@ terraform.tfvars
 .terraform/
 
 # Ignore CLI binaries only (not the terraform folder)
-terraform
+/terraform
 terraform.exe
 
 # Kubernetes configs
