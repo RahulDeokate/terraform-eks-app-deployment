@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: devops-portfolio-container
-          image: rahuldeokate47666/devops-portfolio:1
+          image: rahuldeokate/eks-app-deployment:latest
           ports:
             - containerPort: 80

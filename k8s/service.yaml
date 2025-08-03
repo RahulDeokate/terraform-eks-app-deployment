@@ -1,21 +1,13 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Service
 metadata:
-  name: devops-portfolio-deployment
+  name: devops-portfolio-service
   labels:
     app: devops-portfolio
 spec:
-  replicas: 1
+  type: LoadBalancer
   selector:
-    matchLabels:
-      app: devops-portfolio
-  template:
-    metadata:
-      labels:
-        app: devops-portfolio
-    spec:
-      containers:
-        - name: devops-portfolio-container
-          image: rahuldeokate47666/devops-portfolio:1
-          ports:
-            - containerPort: 80
+    app: devops-portfolio
+  ports:
+    - port: 80
+      targetPort: 80
